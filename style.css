@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(233, 47%, 7%);
+}
+.container {
+  width: 100%;
+  max-width: 1440px;
+  display: inline-grid;
+  justify-content: center;
+  padding: 7rem;
+}
+.card {
+  display: inline-grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  background-color: hsl(244, 38%, 16%);
+}
+.card__image {
+  grid-area: 1/3;
+}
+.card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card__content {
+  padding-top: 5rem;
+  padding-left: 2rem;
+}
+.card__content h1 {
+  position: relative;
+  left: 5rem;
+  font-size: 2rem;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 2rem;
+  font-weight: 580;
+}
+span {
+  background-color: hsl(277, 64%, 61%);
+}
+.card__content p {
+  line-height: 1.2;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 1rem;
+  font-size: 15px;
+  color: darkgray;
+}
+.card__stats {
+  display: inline-grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 2rem;
+  margin-left: 5rem;
+  gap: 1em;
+  color: white;
+}
+#left {
+  margin-left: 5rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .card__stats {
+    display: inline-grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 2rem;
+    margin-left: 5rem;
+    gap: 1em;
+    color: white;
+  }
+  #left {
+    margin-left: 5rem;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .card {
+    display: inline-grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    background-color: hsl(244, 38%, 16%);
+  }
+  .card__image {
+    grid-area: 1/1;
+  }
+  .card__content {
+    padding-top: 5rem;
+    padding-left: 2rem;
+  }
+  .card__content h1 {
+    position: relative;
+    left: 0rem;
+    font-size: 2rem;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 2rem;
+    font-weight: 580;
+  }
+  span {
+    background-color: hsl(277, 64%, 61%);
+  }
+  .card__content p {
+    line-height: 1.2;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 1rem;
+    font-size: 15px;
+    color: darkgray;
+  }
+  .card__stats {
+    display: inline-grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 2rem;
+    margin-left: 0rem;
+    gap: 1em;
+    color: white;
+  }
+  #left {
+    margin-left: 0rem;
+  }
+}
